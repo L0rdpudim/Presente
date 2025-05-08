@@ -1,0 +1,59 @@
+/* Estilos para dispositivos móveis (largura máxima de 768px) */
+@media (max-width: 768px) {
+  .container {
+    display: flex !important;
+    flex-direction: column-reverse !important; /* Inverte a ordem dos elementos */
+    align-items: center !important; /* Centraliza os itens horizontalmente */
+  }
+
+  .bolo {
+    /* Ajuste a posição do bolo para não sobrepor a carta */
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin-top: 20px !important; /* Adicione margem para separação */
+    margin-bottom: 0 !important; /* Remove a margem inferior */
+    z-index: 1 !important; /* Garante que o bolo esteja abaixo da carta */
+  }
+
+  .carta {
+    /* Ajuste a posição da carta, se necessário */
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin-bottom: 20px !important; /* Adicione margem para separação */
+    z-index: 2 !important; /* Garante que a carta esteja acima do bolo */
+  }
+
+  #bolo-mensagem {
+    display: flex !important;
+    flex-direction: column !important; /* Restaura a ordem normal dos elementos */
+    align-items: center !important; /* Centraliza os itens horizontalmente */
+    justify-content: center !important; /* Centraliza verticalmente */
+  }
+
+  #carta-container {
+    margin-bottom: 20px !important; /* Adiciona margem abaixo da carta */
+    width: 80% !important; /* Ocupa 80% da largura da tela */
+  }
+
+  #bolo-container {
+    margin-top: 20px !important; /* Adiciona margem acima do bolo */
+    width: 80% !important; /* Ocupa 80% da largura da tela */
+  }
+
+  #carta {
+    /* Ajustes adicionais para a carta, se necessário */
+    width: 100% !important;
+  }
+
+  .lado {
+    /* Ajustes adicionais para os lados da carta, se necessário */
+    width: 100% !important;
+  }
+
+  .mensagem {
+    /* Ajustes adicionais para a mensagem, se necessário */
+    font-size: 1em !important;
+  }
+}
